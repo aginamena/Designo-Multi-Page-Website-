@@ -55,25 +55,25 @@
 
 @media screen and (max-width: 540px) {
   #footer {
-    height: 900px !important;
+    height: 900px;
     #footerFirst {
-      position: absolute !important;
-      top: 200px !important;
-      height: 230px !important;
+      position: absolute;
+      top: 200px;
+      height: 230px;
     }
     #footerFirst,
     #footerLoc {
-      flex-direction: column !important;
-      width: 100% !important;
-      align-items: center !important;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
     }
     #footerLoc {
-      height: 120px !important;
+      height: 120px;
     }
     #footerFirst + div {
-      flex-direction: column !important;
-      height: 350px !important;
-      align-items: center !important;
+      flex-direction: column;
+      height: 350px;
+      align-items: center;
     }
   }
 }
