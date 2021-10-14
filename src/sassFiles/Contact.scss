@@ -1,0 +1,108 @@
+#contactPage {
+  #contactUsHeader {
+    height: 480px;
+    background-color: #e7816b;
+    background-position: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    & > div {
+      color: white;
+      h1 {
+        font-size: 48px;
+        margin-bottom: 32px;
+      }
+      div {
+        line-height: 26px;
+        width: 445px;
+      }
+    }
+    form {
+      ::placeholder {
+        color: white;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      div {
+        width: 380px;
+        border-bottom: 1px solid white;
+      }
+      input,
+      textarea {
+        display: block;
+        border: 0;
+        background-color: #e7816b;
+        width: 100%;
+        margin-top: 25px;
+        padding-left: 20px;
+        color: white;
+      }
+      input {
+        height: 38px;
+      }
+      textarea {
+        height: 102px;
+      }
+      button {
+        width: 152px;
+        height: 56px;
+        background-color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: #333136;
+        border: 0;
+        border-radius: 10px;
+        margin-top: 24px;
+        &:hover {
+          background-color: #ffad9b;
+          color: white;
+        }
+      }
+    }
+  }
+  #contactUsFeatures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 160px;
+  }
+}
+
+@media (max-width: 992px) {
+  #contactPage {
+    #contactUsHeader {
+      flex-direction: column;
+      height: 791px;
+      text-align: center;
+      form {
+        align-items: center;
+      }
+    }
+    #contactUsFeatures {
+      flex-direction: column;
+      align-items: center;
+      height: 1230px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  #contactPage {
+    #contactUsHeader {
+      & > div {
+        width: 90%;
+        div {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      form {
+        width: 100%;
+        div {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

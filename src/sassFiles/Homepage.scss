@@ -1,0 +1,110 @@
+#homepage {
+  position: relative;
+  #homepage-heading {
+    height: 640px;
+    background-color: #e7816b;
+    border-radius: 10px;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 160px;
+    overflow: hidden;
+
+    & > div {
+      width: 540px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    & > img {
+      position: absolute;
+      bottom: -250px;
+      right: 0;
+    }
+    & .container {
+      color: #ffffff;
+      h1 {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 48px;
+      }
+      div {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 40px auto;
+      }
+      button {
+        width: 152px;
+        height: 56px;
+        border: 0;
+        border-radius: 10px;
+        background-color: white;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        color: #333136;
+        &:hover {
+          background-color: #ffad9b;
+          color: white;
+        }
+      }
+    }
+  }
+
+  & #homepageImages {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+
+    #homepageImagesSmall {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  #homepageFeatures {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+  }
+}
+
+// for large screens and smaller
+@media (max-width: 992px) {
+  #homepage {
+    #homepage-heading {
+      height: 940px;
+      & > div {
+        position: static;
+        text-align: center;
+        transform: unset;
+        width: 100%;
+      }
+      & .container {
+        margin-top: 30px;
+      }
+      & > img {
+        transform: translateX(-50%);
+        left: 50%;
+        right: unset;
+      }
+    }
+    #homepageImages {
+      display: block;
+    }
+  }
+  #homepageFeatures {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 540px) {
+  #homepage {
+    #homepage-heading {
+      height: 1140px;
+    }
+  }
+}

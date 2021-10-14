@@ -1,0 +1,21 @@
+#designBody {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 160px;
+}
+#designDes {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  #designBody {
+    display: block;
+    text-align: center;
+  }
+  #designDes {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,23 @@
+#navigation {
+  text-decoration: none;
+  margin: 64px auto;
+  .navbar-brand {
+    width: 196px;
+  }
+  #navbarNavAltMarkup {
+    justify-content: end;
+    a {
+      text-decoration: none;
+    }
+    .nav-item {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 2px;
+      color: #333136;
+      &:hover {
+        color: #e7816b;
+      }
+    }
+  }
+}

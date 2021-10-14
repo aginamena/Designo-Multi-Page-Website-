@@ -1,0 +1,58 @@
+#getInTouch {
+  height: 292px;
+  background-color: #e7816b;
+  border-radius: 10px;
+  background-position: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffffff;
+  font-weight: normal;
+  // positioned relative to the root element
+  position: absolute;
+  bottom: 320px;
+  & > div {
+    width: 459px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  h2 + div {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 20px;
+  }
+  button {
+    width: 152px;
+    height: 56px;
+    border: 0;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #333136;
+
+    &:hover {
+      background-color: #ffad9b;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  #getInTouch {
+    flex-direction: column;
+    text-align: center;
+    height: 350px;
+    bottom: 800px;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    & > div {
+      width: 100%;
+    }
+  }
+}
